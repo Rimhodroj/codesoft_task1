@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Landing Page</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #fff; 
+    color: #000; 
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #000; 
+    text-decoration: none;
+    font-weight: bold; 
+
+}
+header nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+}
+
+.banner-text {
+    max-width: 100%;
+    padding: 10px;
+    margin-left: 300px;
+}
+
+.banner-image {
+    max-width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-text,
+    .banner-image {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .banner-image {
+        margin-top: 10px;
+    }
+}
+
+.signup-btn {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.features {
+    padding: 50px 0;
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+    text-align: center;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: calc(25.333% - 20px);
+}
+
+.courses {
+    padding: 50px 0;
+}
+
+.course-card {
+    background: #fff;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(25.333% - 20px);
+    display: inline-block;
+}
+
+.course-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.course-btn {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+</style>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="banner">
+            <div class="container">
+              <div class="banner-text">
+                <h1>Welcome to LearnHub</h1>
+                <p>Your gateway to mastering new skills.</p>
+                <button class="signup-btn">Sign Up Now</button>
+              </div>
+            </div>
+            <img class="banner-image" src="c2.png" alt="" >
+          </section>
+    
+        
+        <section class="features">
+            <div class="container">
+                <p><h3>Our Features</h3></p>
+                <div class="feature-card">
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry leaders with years of experience.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Flexible Learning</h3>
+                    <p>Study at your own pace, anytime, anywhere.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Certification</h3>
+                    <p>Receive certificates to validate your learning.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="courses">
+            <div class="container">
+                <div class="course-card">
+                    <img src="computer.png" alt="Fullstack Icon">
+                    <h3>Fullstack Development</h3>
+                    <p>Master front-end and back-end technologies.</p>
+                    <button class="course-btn">Learn More</button>
+                </div>
+                <div class="course-card">
+                    <img src="ai.png" alt="AI Icon">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Delve into AI and machine learning concepts.</p>
+                    <button class="course-btn">Learn More</button>
+                </div>
+                <div class="course-card">
+                    <img src="ui.png" alt="UI/UX Icon">
+                    <h3>UI/UX Design</h3>
+                    <p>Create user-friendly and beautiful designs.</p>
+                    <button class="course-btn">Learn More</button>
+                </div>
+                <div class="course-card">
+                    <img src="java.png" alt="Java Icon">
+                    <h3>Java Programming</h3>
+                    <p>Build robust applications with Java.</p>
+                    <button class="course-btn">Learn More</button>
+                </div>
+                <div class="course-card">
+                    <img src="computer-scientist.png" alt="Data Science Icon">
+                    <h3>Data Science</h3>
+                    <p>Analyze data and gain insights with powerful tools.</p>
+                    <button class="course-btn">Learn More</button>
+                </div>
+                <div class="course-card">
+                    <img src="tool.png" alt="C++ Icon">
+                    <h3>C++ Programming</h3>
+                    <p>Learn advanced programming techniques with C++.</p>
+                    <button class="course-btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+    
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 LearnHub. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+    </html>
+    
+
